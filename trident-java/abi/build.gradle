@@ -2,6 +2,11 @@ plugins {
     
 }
 
+shadowJar {
+    archiveClassifier.set('all')
+    mergeServiceFiles()
+}
+
 description 'TRON Application Binary Interface (ABI) for working with smart contracts'
 
 dependencies {
